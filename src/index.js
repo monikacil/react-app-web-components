@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'custom-modal-web-component/dist/bundle.min.js'
 
 ReactDOM.render(
   <React.StrictMode>

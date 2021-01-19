@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import 'custom-modal-web-component/dist/bundle.min.js'
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
           modalNode.removeEventListener('btn-click', handleClick);
       };
   });
-  
+
   return (
     <div className="App">
         <button type="button" onClick={() => setShowModal(true)}>
@@ -35,7 +36,6 @@ function App() {
         <custom-modal ref={refModal} 
                       title="Modal Web Components" 
                       button="Send"
-                      size="l"
                       open={showModal}>
           <div slot="content">
             <p>{message}</p>
